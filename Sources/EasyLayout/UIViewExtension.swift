@@ -7,6 +7,7 @@
 
 import UIKit
 
+// position extension
 extension UIView {
     
     var left: CGFloat {
@@ -60,6 +61,28 @@ extension UIView {
         }
         set {
             frame.origin.y = newValue - frame.size.height / 2
+        }
+    }
+}
+
+// shape extension
+extension UIView {
+    
+    var width: CGFloat {
+        get {
+            return frame.size.width
+        }
+        set {
+            frame.size.width = newValue
+        }
+    }
+    
+    var height: CGFloat {
+        get {
+            return frame.size.height
+        }
+        set {
+            frame.size.height = newValue
         }
     }
 }
