@@ -85,4 +85,13 @@ extension UIView {
             frame.size.height = newValue
         }
     }
+    
+    public var size: CGSize {
+        get {
+            return frame.size
+        }
+        set {
+            frame.size = newValue
+        }
+    }
 }

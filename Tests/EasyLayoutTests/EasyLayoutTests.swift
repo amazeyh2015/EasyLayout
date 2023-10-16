@@ -31,11 +31,17 @@ final class EasyLayoutTests: XCTestCase {
         
         XCTAssertEqual(view.width, 100)
         XCTAssertEqual(view.height, 80)
+        XCTAssertEqual(view.size, CGSize(width: 100, height: 80))
         
         view.width = 200
         view.height = 100
         
         XCTAssertEqual(view.frame.size.width, 200)
         XCTAssertEqual(view.frame.size.height, 100)
+        
+        view.size = CGSize(width: 120, height: 60)
+        
+        XCTAssertEqual(view.frame.size.width, 120)
+        XCTAssertEqual(view.frame.size.height, 60)
     }
 }
