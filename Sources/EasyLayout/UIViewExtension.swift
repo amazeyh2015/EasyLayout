@@ -10,7 +10,7 @@ import UIKit
 // position extension
 extension UIView {
     
-    var left: CGFloat {
+    public var left: CGFloat {
         get {
             return frame.origin.x
         }
@@ -19,7 +19,7 @@ extension UIView {
         }
     }
     
-    var right: CGFloat {
+    public var right: CGFloat {
         get {
             return frame.origin.x + frame.size.width
         }
@@ -28,7 +28,7 @@ extension UIView {
         }
     }
     
-    var top: CGFloat {
+    public var top: CGFloat {
         get {
             return frame.origin.y
         }
@@ -37,7 +37,7 @@ extension UIView {
         }
     }
     
-    var bottom: CGFloat {
+    public var bottom: CGFloat {
         get {
             return frame.origin.y + frame.size.height
         }
@@ -46,7 +46,7 @@ extension UIView {
         }
     }
     
-    var centerX: CGFloat {
+    public var centerX: CGFloat {
         get {
             return frame.origin.x + frame.size.width / 2
         }
@@ -55,7 +55,7 @@ extension UIView {
         }
     }
     
-    var centerY: CGFloat {
+    public var centerY: CGFloat {
         get {
             return frame.origin.y + frame.size.height / 2
         }
@@ -68,7 +68,7 @@ extension UIView {
 // shape extension
 extension UIView {
     
-    var width: CGFloat {
+    public var width: CGFloat {
         get {
             return frame.size.width
         }
@@ -77,7 +77,7 @@ extension UIView {
         }
     }
     
-    var height: CGFloat {
+    public var height: CGFloat {
         get {
             return frame.size.height
         }
